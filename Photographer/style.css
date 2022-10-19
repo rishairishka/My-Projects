@@ -1,0 +1,571 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F5EEDC;
+    font-family: 'Playfair Display', serif;
+}
+
+.menu {
+    display: flex;
+    padding: 10px;
+    background-color: #D3E4CD;
+    border-radius: 10px;
+}
+
+.info {
+    padding: 5px;
+    transition: 0.3s ease;
+}
+
+.info:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.item {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-weight: bolder;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.item:hover {
+    background-color: #F5EEDC;
+    text-decoration: underline;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.social {
+    border-radius: 10px;
+}
+
+h1 {
+    color: #632626;
+    text-align: center;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.poster {
+    width: 340px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.poster:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #F5EEDC;
+    flex-wrap: wrap;
+}
+
+h2 {
+    background-color: #D3E4CD;
+    padding: 20px;
+    text-decoration: overline;
+    border-radius: 10px;
+}
+
+.aboutme {
+    align-self: center;
+    width: 400px;
+    height: 300px;
+    line-height: 30px;
+}
+
+.mainPhoto {
+    width: 400px;
+}
+
+.quote {
+    align-self: center;
+    font-variant: small-caps;
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: 600;
+    text-decoration: overline;
+}
+
+.work-list {
+    padding: 40px;
+    background-image: url("assets/pic.jpg");
+    background-size: 475px 300px;
+    opacity: 0.8;
+}
+
+li {
+    font-size: 22px;
+    color: white;
+}
+
+.work-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.work-item a:hover {
+    text-decoration: underline;
+}
+
+h3 {
+    padding: 20px;
+    text-decoration: overline;
+    color: #632626;
+    font-size: 22px;
+}
+
+.wedding {
+    position: relative;
+    height: 500px;
+    border: solid 2px black;
+}
+
+.wed1 {
+    position: absolute;
+    width: 260px;
+    height: 400px;
+}
+
+.wed2 {
+    position: absolute;
+    z-index: 2;
+    width: 300px;
+    height: 440px;
+    left: 250px;
+    top: 50px;
+}
+
+.wed3 {
+    position: absolute;
+    z-index: 1;
+    width: 320px;
+    left: 530px;
+    top: -45px;
+}
+
+.wedbtn {
+    position: absolute;
+    bottom: 27px;
+    left: 55px;
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    background-color: #D3E4CD;
+    text-transform: uppercase;
+}
+
+.wedbtn a {
+    color: black;
+    text-decoration: none;
+}
+
+.wedbtn:hover {
+    background-color: #E3BEC6;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.family {
+    position: relative;
+    height: 500px;
+    border: solid 2px black;
+}
+
+.fam1 {
+    position: absolute;
+    width: 300px;
+    right: 580px;
+}
+
+.fam2 {
+    position: absolute;
+    z-index: 2;
+    width: 320px;
+    right: 280px;
+    top: 50px;
+}
+
+.fam3 {
+    position: absolute;
+    z-index: 1;
+    width: 300px;
+    right: 0%;
+    top: -45px;
+}
+
+.fambtn {
+    position: absolute;
+    bottom: 25px;
+    right: 75px;
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    background-color: #D3E4CD;
+    text-transform: uppercase;
+}
+
+.fambtn a {
+    color: black;
+    text-decoration: none;
+}
+
+.fambtn:hover {
+    background-color: #E3BEC6;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.love {
+    position: relative;
+    height: 500px;
+    border: solid 2px black;
+}
+
+.love1 {
+    position: absolute;
+    width: 280px;
+}
+
+.love2 {
+    position: absolute;
+    z-index: 2;
+    width: 300px;
+    left: 260px;
+    top: 40px;
+}
+
+.love3 {
+    position: absolute;
+    z-index: 1;
+    width: 320px;
+    left: 540px;
+    top: -45px;
+}
+
+.lovebtn {
+    position: absolute;
+    bottom: 17px;
+    left: 55px;
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    background-color: #D3E4CD;
+    text-transform: uppercase;
+}
+
+.lovebtn a {
+    color: black;
+    text-decoration: none;
+}
+
+.lovebtn:hover {
+    background-color: #E3BEC6;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.individyal {
+    position: relative;
+    height: 500px;
+    border: solid 2px black;
+}
+
+.ind1 {
+    position: absolute;
+    width: 20%;
+    right: 42%;
+}
+
+.ind2 {
+    position: absolute;
+    z-index: 2;
+    width: 310px;
+    height: 430px;
+    right: 300px;
+    top: 50px;
+}
+
+.ind3 {
+    position: absolute;
+    z-index: 1;
+    width: 320px;
+    right: 0%;
+    top: -45px;
+}
+
+.indbtn {
+    position: absolute;
+    bottom: 9px;
+    right: 80px;
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    background-color: #D3E4CD;
+    text-transform: uppercase;
+}
+
+.indbtn a {
+    color: black;
+    text-decoration: none;
+}
+
+.indbtn:hover {
+    background-color: #E3BEC6;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.subject {
+    position: relative;
+    height: 500px;
+    border: solid 2px black;
+}
+
+.sub1 {
+    position: absolute;
+    width: 300px;
+    height: 430px;
+}
+
+.sub2 {
+    position: absolute;
+    z-index: 2;
+    width: 440px;
+    left: 290px;
+    top: 40px;
+}
+
+.sub3 {
+    position: absolute;
+    z-index: 1;
+    width: 350px;
+    left: 700px;
+    top: -40px;
+}
+
+.subbtn {
+    position: absolute;
+    bottom: 12px;
+    left: 35px;
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    background-color: #D3E4CD;
+    text-transform: uppercase;
+}
+
+.subbtn a {
+    color: black;
+    text-decoration: none;
+}
+
+.subbtn:hover {
+    background-color: #E3BEC6;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.food {
+    position: relative;
+    height: 500px;
+    border: solid 2px black;
+}
+
+.food1 {
+    position: absolute;
+    width: 320px;
+    height: 470px;
+    right: 600px;
+}
+
+.food2 {
+    position: absolute;
+    z-index: 2;
+    width: 320px;
+    height: 450px;
+    right: 295px;
+    top: 40px;
+}
+
+.food3 {
+    position: absolute;
+    z-index: 1;
+    width: 320px;
+    right: 0%;
+    top: -45px;
+}
+
+.foodbtn {
+    position: absolute;
+    bottom: 10px;
+    right: 80px;
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    background-color: #D3E4CD;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+}
+
+.foodbtn a {
+    color: black;
+    text-decoration: none;
+}
+
+.foodbtn:hover {
+    background-color: #E3BEC6;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.report {
+    position: relative;
+    height: 500px;
+    border: solid 2px black;
+}
+
+.rep1 {
+    position: absolute;
+    width: 300px;
+    height: 420px;
+}
+
+.rep2 {
+    position: absolute;
+    z-index: 2;
+    width: 300px;
+    left: 270px;
+    top: 40px;
+}
+
+.rep3 {
+    position: absolute;
+    z-index: 1;
+    width: 480px;
+    height: 330px;
+    left: 550px;
+    top: -40px;
+}
+
+.repbtn {
+    position: absolute;
+    bottom: 18px;
+    left: 65px;
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    background-color: #D3E4CD;
+    text-transform: uppercase;
+}
+
+.repbtn a {
+    color: black;
+    text-decoration: none;
+}
+
+.repbtn:hover {
+    background-color: #E3BEC6;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.form {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+h4 {
+    margin: 10px;
+    font-size: 20px;
+    color: #632626;
+}
+
+.input {
+    padding: 10px;
+}
+
+input {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.inpbtn {
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    background-color: #C37B89;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.inpbtn a {
+    text-decoration: none;
+    color: black;
+}
+
+.inpbtn:hover {
+    background-color: #BBBBBB;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+video {
+    height: 300px;
+}
+
+.footer {
+    display: flex;
+    background-color: #D3E4CD;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.info1 {
+    padding: 15px;
+    transition: 0.3s ease;
+}
+
+.info1:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.cell {
+    font-size: 20px;
+    color: #632626;
+}
+
+.folder {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.photo {
+    width: 600px;
+    height: 800px;
+    margin: 10px;
+}
